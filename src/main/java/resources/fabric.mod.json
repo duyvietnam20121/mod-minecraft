@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "gl2d3d",
+  "version": "${version}",
+  "name": "GL to D3D",
+  "description": "Routes Minecraft's OpenGL calls to DirectX 12 using Mesa's Gallium d3d12 driver.",
+  "authors": ["Duyvietnambeta"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "preLaunch": ["dev.duyviet.gl2d3d.Gl2D3dPreLaunch"],
+    "client": ["dev.duyviet.gl2d3d.RendererDiagnostics"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": ">=0.119.4"
+  }
+}
